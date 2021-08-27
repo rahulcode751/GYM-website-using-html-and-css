@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym website project 1</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+<!-- ek bar phli ko comment out kr ek bar dusri ko or ek bar dono ko or diff dekh ye hm google font se import krke laye h d link ayi h codewithharry me ek hi ayi thi  abhi maine dusri wali comment in kr rkhi h -->
+
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('try3.jpg');
+
+    }
+
+    .left {
+        display: inline-block;
+        /* ye google font se laye h upar link bhi chipka rkha h */
+        color: white;
+        /*  border: 2px solid red;   */
+        position: absolute;
+        left: 35px;
+        top: 22px;
+    }
+
+    .mid {
+        display: block;
+        width: 55%;
+        margin: 20px auto;
+        /* 12px to pr or x asix auto krdi taki center me a jaye */
+        color: white;
+        /*   border: 2px solid rgb(113, 113, 43);  */
+    }
+
+    .right {
+        position: absolute;
+        /* ye jo cheze hm position ki help se achive kr re h ye hm flask box and float se bhi kr skte the   */
+        right: 34px;
+        top: 20px;
+        /* color: white;   */
+        display: inline-block;
+        border: 2px solid green;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(39, 170, 184);
+    }
+
+    .left img {
+        width: 91px;
+        filter: invert(100%);
+        /* ye invert func black img ko white kr deta h or white img ko black */
+    }
+
+    .left div {
+        font-size: 12px;
+        text-align: center;
+        line-height: 10px;
+        font-size: 12px;
+    }
+
+    .bts {
+        background-color: black;
+        margin: 1px 10px;
+        padding: 5px 1px;
+        border: white;
+        border-radius: 5px;
+        border-color: white;
+        font-size: 14px;
+        cursor: pointer;
+        /* ye hath lw ayga cursor ki jageh */
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        /* bts ke andr button tags h or usme kya h chrome ne default cheeze lga rkhi h unko hm body ke andr change krke nhi hta skte hmne button ke andr hi cgange krne honge button ki class bts thi to yha chnge kr ra hu ..hmne font family or color body ke andr bhi dale h but vo button ke andr jo likh h usme work nhi kr rhe the bcoz of vhrome default setu[p to hmne unhe yha pr chnage kiya h */
+
+
+    }
+
+    .bts:hover {
+        background-color: gray;
+        text-decoration: underline;
+
+    }
+
+    .container {
+        float: right;
+        text-align: center;
+        border: 2px solid white;
+        margin: 34px 35px;
+        padding: 0px 7px;
+        width: 33%;
+        border-radius: 23px;
+    }
+
+    .container h1 {
+        color: white;
+    }
+
+    .formgroup input {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: justify;
+        display: block;
+        width: 287px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 12px;
+    }
+
+    .formgroup button {
+        display: block;
+        width: 60%;
+        margin: 6px 100px;
+        border: 2px solid white;
+    }
+</style>
+
+<body>
+    <headr class="headr">
+        <!-- Left box for logo-->
+        <div class="left">
+            <img src="logo gym.jpg" alt="">
+            <div>RAHUL FITNESS</div>
+        </div>
+        <!-- Mid box for navbar-->
+        <div class="mid">
+            <!--I'm mid  -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons-->
+        <div class="right">
+            <button class="bts">Connect in whatsapp</button>
+            <button class="bts">Connect in E-mail</button>
+        </div>
+    </headr>
+
+    <div class="container">
+        <h1>Join the best gym of GUNA</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name:">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Age:">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gender:">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Contact No. / E-mail:">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Locality:">
+            </div>
+            <div class="formgroup">
+                <button class="bts">Submit</button>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
